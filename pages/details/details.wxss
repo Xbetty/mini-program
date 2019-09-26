@@ -1,0 +1,32 @@
+/* pages/details/details.wxss */
+.details-container {
+  width: 100%;
+}
+.details-container .banner {
+  width: 100%;
+  height: 375rpx;
+}
+.details-container .details-body {
+  width: 100%;
+  padding: 50rpx 80rpx;
+}
+
+.details-body image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: -20rpx;
+}
+.details-body .title {
+  font-weight: 600;
+}
+.details-body .desc-container {
+  width: 100%;
+
+}
+.desc-container text {
+  text-align: center;
+}
+.copy-btn {
+  background-color: #2e5e86;
+  color: #fff;
+}

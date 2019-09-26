@@ -1,0 +1,4 @@
+<!--pages/API/API.wxml-->
+<view>
+  <button bindtap="copy">剪切板</button>
+</view>

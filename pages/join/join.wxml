@@ -1,0 +1,61 @@
+<!--pages/join/join.wxml-->
+<view class="join-container">
+<!-- 图片 -->
+  <image
+    class="banner"
+    src="/images/img7.jpg"
+  >
+  </image>
+  <!-- 信息 -->
+  <view class="text-container">
+    <view class="text-one">
+    <!-- 关于我们 -->
+      <view class="title">
+        关于我们
+      </view>
+      <text class="desc">
+        中国平安在2016年《福布斯》“全球上市公司2000强”中名列第20位。美国《财富》杂志“全球领先企业500强”名列第48名，并蝉联中国内地非国有企业第一。
+        平安为您提供丰富的贷款产品。大品牌值得信赖！
+      </text>
+    </view>
+    <!-- 商务合作 -->
+     <view class="text-one">
+      <view class="title">
+        商务合作
+      </view>
+      <text class="desc">
+        欢迎加入我们，合作热线：158xxxx2323
+        1. 让您收入更多
+        2. 诚邀各大有实力重信誉的公司一同前行
+        3. 便捷的人事管理，让您提高工作效率
+        4. 完善的管理体制，提高您的知名度
+      </text>
+    </view>
+    <!-- 联系我们 -->
+     <view class="text-one">
+      <view class="title">
+        联系我们
+      </view>
+      <text class="desc">
+        电话：158xxxx2323
+        微信：158xxxx2323
+        Q Q: 162xxxxx520
+        地址：平安银行金融综合部
+      </text>
+      <view class="contact-img">
+        <image
+          src="/images/ewm.png"
+        >
+        </image>
+      </view>
+      <text class="desc note-text">
+        扫描上方二维码，添加我的微信
+      </text>
+    </view>
+    <!-- 底部按钮 -->
+    <view class="footer">
+      <button>微信咨询</button>
+      <button bindtap="phoneConsult">电话咨询</button>
+    </view>
+  </view>
+</view>

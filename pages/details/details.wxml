@@ -1,0 +1,26 @@
+<!--pages/details/details.wxml-->
+<view class="details-container">
+  <image
+    class="banner"
+    src="/images/img1.png"
+  >
+  </image>
+  <view class="details-body">
+    <image src="{{img}}"></image>
+    <view class="title">{{title}}</view>
+    <view class="desc-container">
+      <text
+        wx:for="{{descriptions}}"
+        wx:key="{{index}}"
+      >
+        {{item}}
+      </text>
+    </view>
+  </view>
+  <button
+    class="copy-btn"
+    bindtap="copy"
+  >
+    复制名字
+  </button>
+</view>

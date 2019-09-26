@@ -1,0 +1,52 @@
+<!--pages/main/main.wxml-->
+<view class="test-container">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    circular="{{circular}}"
+  >
+    <block wx:for="{{imgUrls}}" wx:key="i">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 图文列表 -->
+  <view class="items-list">
+    <view
+      class="pro-item"
+      wx:for="{{list}}"
+      wx:for-index="pindex"
+      wx:for-item="pitem"
+      wx:key="pindex"
+      bindtap="toDetail"
+      data-index="{{pindex}}"
+    >
+      <!-- 图片 -->
+      <image src="{{pitem.img}}"></image>
+      <!-- 介绍 -->
+      <view class="pro-body">
+        <view class="pro-title">{{pitem.title}}</view>
+        <view 
+          class="pro-desc"
+          wx:for="{{pitem.descriptions}}"
+          wx:for-index="index"
+          wx:for-item="item"
+          wx:key="index"
+        >
+          {{item}}
+        </view>
+        <view class="pro-footer">
+          <button>查看详情</button>
+          <button 
+            open-type="contact"
+            bindcontact="toContact"
+          >免费在线咨询</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

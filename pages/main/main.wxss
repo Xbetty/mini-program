@@ -1,0 +1,59 @@
+/* pages/main/main.wxss */
+.test-container {
+  width: 100%;
+  height: 100%;
+}
+/*  */
+swiper {
+  width: 100%;
+  height: 340rpx;
+}
+swiper image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*  */
+.items-list {
+  padding: 20rpx;
+  overflow: hidden;
+}
+.pro-item {
+  float: left;
+  width: 100%;
+  border-bottom: 1rpx solid #eee;
+}
+.pro-item image {
+  width: 230rpx;
+  height: 230rpx;
+  float: left;
+}
+.pro-item .pro-body {
+  float: left;
+  padding: 20rpx;
+}
+.pro-body .pro-title {
+  font-weight: 600;
+  color: #212121;
+}
+.pro-body .pro-desc{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #9a9a9a;
+}
+.pro-footer {
+  overflow: hidden;
+}
+.pro-footer button {
+  width: 200rpx;
+  float: left;
+  font-size: 28rpx;
+  margin-right: 5rpx;
+}
+button:first-child{
+  color: #2e5e86;
+}
+button:nth-child(2){
+  background-color: #2e5e86;
+  color: #fff;
+}
